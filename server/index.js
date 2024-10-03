@@ -31,7 +31,7 @@ app.use(fileUpload({
 }));
 
 app.get('/', (req, res) => res.send({
-  name: 'CSC Result Portal',
+  name: 'FUTO CSC Result Portal',
   version: '1.0',
   location: 'Nigeria',
 }));
