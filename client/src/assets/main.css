@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ::-webkit-scrollbar {
+  width: 8px;
+  padding: 0 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(107, 153, 222);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e8e8e8;
+}
+ */
+body {
+  font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--p-text-color);
+}
+
+table.table {
+  @apply w-full bg-white rounded whitespace-nowrap border-collapse cursor-context-menu;
+}
+
+table.table thead {
+  @apply text-left sticky top-0 border-b bg-inherit;
+}
+
+table.table tbody tr {
+  @apply border-b hover:bg-[--p-surface-50] /* even:bg-[--p-surface-100]  hover:bg-[--p-primary-100] */;
+}
+
+table.table th,
+table.table tbody td {
+  @apply py-4 px-6;
+}
+
+table.table.sm {
+  @apply text-sm;
+}
+
+table.table.xs {
+  @apply text-xs;
+}
+
+table.table-edit {
+  @apply w-full bg-white rounded whitespace-nowrap border-collapse cursor-context-menu;
+}
+
+table.table-edit thead {
+  @apply text-left sticky top-0 bg-inherit border-b;
+}
+
+table.table-edit tbody tr {
+  @apply border-b;
+}
+
+table.table-edit th,
+table.table-edit tbody td {
+  @apply py-2 px-1;
+}
+
+table.table-edit.sm {
+  @apply text-sm;
+}
+
+table.table-edit.xs {
+  @apply text-xs;
+}
+
+table.my-table {
+  @apply w-full bg-white whitespace-nowrap lg:whitespace-normal rounded border-collapse cursor-context-menu;
+}
+
+table.my-table thead {
+  @apply text-left sticky z-20 top-0 bg-[--p-primary-200];
+}
+
+table.my-table tbody tr {
+  @apply even:bg-[--p-surface-50];
+}
+
+table.my-table th,
+table.my-table tbody td {
+  @apply py-2 px-4;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid black;
+}
