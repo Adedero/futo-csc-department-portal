@@ -1,10 +1,10 @@
 <template>
   <main class="h-dvh w-dvw relative">
-    <header class="p-3">
-      <button @click="$router.push('/')" type="button">
-        <img src="../../assets/img/futo-logo.png" alt="futo-logo" />
-      </button>
-    </header>
+    <!-- <header c -->lass="p-3">
+    <!--   <button --> @click="$router.push('/')" type="button">
+    <!--     <img  -->src="../../assets/img/futo-logo.png" alt="futo-logo" />
+    <!--   </butto -->n>
+    <!-- </header> -->
 
     <div class="p-3 w-full mt-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%]">
       <h1 class="text-4xl font-medium">403</h1>
